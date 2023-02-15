@@ -7,6 +7,7 @@ import './config/mongo.js';
 
 // routes
 import userRouter from './routes/users.js'
+import productRouter from './routes/product.js'
 
 
 const app = express();
@@ -33,6 +34,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', userRouter);
+app.use('/product', productRouter);
 
 
 /** catch 404 and forward to error handler */

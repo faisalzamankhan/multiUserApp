@@ -7,6 +7,8 @@ var router = express.Router();
 router.post('/signup',user.signup);
 router.post('/login',user.login)
 router.post('/forgotPassword',user.forgotPassword)
+router.post('/changePassword',user.changePassword)
+
 // router.post('/login/users',user.onGetAllUser)
 
 export default router;

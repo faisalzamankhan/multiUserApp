@@ -1,11 +1,15 @@
 import mongoose from 'mongoose';
 import  jwt from 'jsonwebtoken';
 const productSchema = new mongoose.Schema({
-    name:{
+    Name:{
       type:String,
       require:true
     },
-    category:{
+    Url:{
+      type:String,
+      require:true
+    } ,
+    Price:{
       type:String,
       require:true
     } 
